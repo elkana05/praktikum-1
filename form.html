@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>📝 Form Pendaftaran - Sistem Registrasi Online</title>
+</head>
+<body>
+  <header align="center">
+    <h1>📋 FORM PENDAFTARAN ONLINE</h1>
+    <p><em>Silakan lengkapi data diri Anda dengan benar</em></p>
+    <hr>
+  </header>
+
+  <main>
+    <form method="post" action="#" enctype="multipart/form-data">
+      <table border="1" cellspacing="0" cellpadding="10" width="90%" align="center">
+        <tr>
+          <th colspan="2" align="center">👤 DATA PRIBADI</th>
+        </tr>
+        <tr>
+          <td width="30%">📝 Nama Lengkap</td>
+          <td><input type="text" name="nama_lengkap" required placeholder="Masukkan nama lengkap sesuai KTP" size="40"></td>
+        </tr>
+        <tr>
+          <td>⚧️ Jenis Kelamin</td>
+          <td>
+            <input type="radio" name="jenis_kelamin" value="laki-laki" id="laki" required>
+            <label for="laki">👨 Laki-laki</label>
+            <input type="radio" name="jenis_kelamin" value="perempuan" id="perempuan" required>
+            <label for="perempuan">👩 Perempuan</label>
+          </td>
+        </tr>
+        <tr>
+          <td>🏙️ Tempat Lahir</td>
+          <td><input type="text" name="tempat_lahir" required placeholder="Kota tempat lahir" size="30"></td>
+        </tr>
+        <tr>
+          <td>📅 Tanggal Lahir</td>
+          <td><input type="date" name="tanggal_lahir" required></td>
+        </tr>
+        <tr>
+          <td>🔑 Password</td>
+          <td><input type="password" name="password" required minlength="8" placeholder="Minimal 8 karakter"></td>
+        </tr>
+        <tr>
+          <td>🔐 Konfirmasi Password</td>
+          <td><input type="password" name="konfirmasi_password" required minlength="8" placeholder="Ulangi password"></td>
+        </tr>
+
+        <tr>
+          <th colspan="2" align="center">🎯 HOBI & MINAT</th>
+        </tr>
+        <tr>
+          <td colspan="2" align="center">
+            <table width="100%">
+              <tr>
+                <td><label><input type="checkbox" name="hobi" value="membaca"> 📚 Membaca</label></td>
+                <td><label><input type="checkbox" name="hobi" value="olahraga"> ⚽ Olahraga</label></td>
+              </tr>
+              <tr>
+                <td><label><input type="checkbox" name="hobi" value="musik"> 🎵 Musik</label></td>
+                <td><label><input type="checkbox" name="hobi" value="traveling"> ✈️ Traveling</label></td>
+              </tr>
+              <tr>
+                <td><label><input type="checkbox" name="hobi" value="memasak"> 🍳 Memasak</label></td>
+                <td><label><input type="checkbox" name="hobi" value="teknologi"> 💻 Teknologi</label></td>
+              </tr>
+              <tr>
+                <td colspan="2"><label><input type="checkbox" name="hobi" value="seni"> 🎨 Seni</label></td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+        <tr>
+          <th colspan="2" align="center">📞 KONTAK & KOMUNIKASI</th>
+        </tr>
+        <tr>
+          <td>📧 Email</td>
+          <td><input type="email" name="email" required placeholder="nama@email.com"></td>
+        </tr>
+        <tr>
+          <td>📱 No. Telepon</td>
+          <td><input type="tel" name="telepon" placeholder="+62 812-3456-7890" pattern="[0-9+\-\s]+"></td>
+        </tr>
+
+        <tr>
+          <th colspan="2" align="center">⚖️ PERSETUJUAN & KETENTUAN</th>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <input type="checkbox" name="persetujuan" required id="setuju">
+            <label for="setuju">✅ Saya menyetujui</label><br><br>
+            📋 <a href="#">Syarat dan Ketentuan</a><br>
+            🔒 <a href="#">Kebijakan Privasi</a><br>
+            📩 Pengiriman newsletter & promosi
+          </td>
+        </tr>
+      </table>
+
+      <br>
+      <section align="center">
+        <input type="reset" value="🔄 Reset Form"> 
+        <input type="submit" value="📤 Kirim Pendaftaran">
+      </section>
+    </form>
+
+    <hr>
+    <section>
+      <h3>ℹ️ Informasi</h3>
+      <ul>
+        <li>Semua field bertanda * wajib diisi</li>
+        <li>Data Anda akan dienkripsi dan aman</li>
+        <li>Proses verifikasi maksimal 2x24 jam</li>
+        <li>Hubungi support jika ada kendala</li>
+      </ul>
+    </section>
+
+    <nav align="center">
+      <h3>🧭 Navigasi</h3>
+      <a href="index.html">🏠 Kembali ke Menu Utama</a> | 
+      <a href="login.html">🔑 Login</a> | 
+      <a href="help.html">❓ Bantuan</a>
+    </nav>
+  </main>
+
+  <footer align="center">
+    <hr>
+    <p>
+      © 2025 Sistem Pendaftaran Online | Made with ❤️ in Indonesia<br>
+      📧 support@pendaftaran.id | 📞 (021) 1234-5678
+    </p>
+  </footer>
+</body>
+</html>
